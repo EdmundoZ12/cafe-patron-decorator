@@ -18,17 +18,17 @@ export class Cafeteria {
 
   agregarLeche(): void {
     this.bebidaActual = new Leche(this.bebidaActual);
-    this.ingredientesAgregados.push('Leche (+$0.50)');
+    this.ingredientesAgregados.push('Leche (+5Bs.)');
   }
 
   agregarChocolate(): void {
     this.bebidaActual = new Chocolate(this.bebidaActual);
-    this.ingredientesAgregados.push('Chocolate (+$0.75)');
+    this.ingredientesAgregados.push('Chocolate (+6Bs.)');
   }
 
   agregarCrema(): void {
     this.bebidaActual = new Crema(this.bebidaActual);
-    this.ingredientesAgregados.push('Crema batida (+$0.30)');
+    this.ingredientesAgregados.push('Crema batida (+5Bs.)');
   }
 
   reiniciar(): void {
@@ -50,7 +50,7 @@ export class Cafeteria {
         '🎯 Pedido confirmado:\n\n' +
           this.obtenerDescripcion() +
           '\n' +
-          'Total: $' +
+          'Total: Bs' +
           this.obtenerPrecio().toFixed(2)
       );
     } else {
@@ -58,7 +58,7 @@ export class Cafeteria {
         '✅ ¡Pedido confirmado!\n\n' +
           this.obtenerDescripcion() +
           '\n' +
-          'Total: $' +
+          'Total: Bs' +
           this.obtenerPrecio().toFixed(2) +
           '\n\n' +
           '¡Gracias por tu preferencia!'

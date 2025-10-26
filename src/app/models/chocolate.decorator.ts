@@ -2,7 +2,7 @@ import { BebidaDecorator } from './bebida-decorator';
 import { Bebida } from './bebida.interface';
 
 export class Chocolate extends BebidaDecorator {
-  private readonly precioExtra: number = 0.75;
+  private readonly precioExtra: number = 6;
 
   constructor(bebida: Bebida) {
     super(bebida);
